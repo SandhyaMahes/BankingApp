@@ -1,0 +1,25 @@
+<p>login works!</p>
+<p>login works!</p>
+<body class="text-center">
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+      <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputCusid" class="sr-only">Customer Id</label>
+      <input type="number" id="inputCusid" class="form-control" placeholder="Customer Id" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <ul><li class="nav-item">
+        <a class="nav-link" routerLink="/userportal" routerLinkActive="active">Products</a>
+      </li></ul>
+      <button class="btn btn-lg btn-primary btn-block" routerLink="/userportal" type="submit">Login</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+    </form>
+    </body>
+  <main>
+    <router-outlet></router-outlet>
+  </main>  
